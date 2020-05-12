@@ -1,5 +1,5 @@
 //задание №1
-var name = prompt ('Ваше имя'),
+let name = prompt ('Ваше имя'),
     age = prompt ('Ваш возраст'),
     city = prompt ('Ваш город'),
     company = prompt ('Ваша компания'),
@@ -14,25 +14,18 @@ document.write('. Мои контактные данные: ' + phone + email);
 
 
 //задание №2
-var n=2020,
+let n=2020,
     i=n-age;
     console.log(name + ' родил(а)ся в '+ n + ' году');
 
 
 //задание №3
-var stroka,
-    q = prompt('Введите 1-ое число'),
-    w = prompt('Введите 2-ое число'),
-    e = prompt('Введите 3-ое число'),
-    r = prompt('Введите 4-ое число'),
-    t = prompt('Введите 5-ое число'),
-    y = prompt('Введите 6-ое число'),
-    stroka = q + w + e + r + t + y;
+let str = prompr ('введите шестизначную строку');
 
 console.log("");
-console.log('Введенная шестизначная строка - ' + stroka);
+console.log('Введенная шестизначная строка - ' + str);
 
-    if ((q + w + e)==( r + t + y )) {
+    if ((str[0] + str[1] + str[2])==( str[3] + str[4] + str[5])) {
     alert( 'Сумма первых трех цифр строки равна сумме трех последних' );
     } else { 
     alert ( 'Сумма первых трех цифр строки НЕ равна сумме трех последних' );
@@ -40,7 +33,7 @@ console.log('Введенная шестизначная строка - ' + stro
 
 
 //задание №4
-var s = prompt('введите число');
+let s = prompt('введите число');
     if (s>0) {
         alert ("переменная больше нуля - верно");  
     } else {
@@ -49,17 +42,15 @@ var s = prompt('введите число');
 
     
 //задание №5
-var a=10,
+let a=10,
     b=2;
 console.log(a+b);
 console.log(a-b);    
 console.log(a*b);    
 console.log(a/b);    
 
-var c=a+b;
-    d = Math.pow(c,2);
-if (c>1){
-    alert (d);
+if (a+b>1){
+    alert (Math.pow((a+b),2));
 }
 
 //задание №6
@@ -94,7 +85,7 @@ let day = 1;
             console.log (day + ' - третья декада');
         } 
 
-//задание №9 !!!Обязательно к проверке
+//задание №9 
 
 let days = prompt ('введите любое значение количества дней'),
     years = days/365,
